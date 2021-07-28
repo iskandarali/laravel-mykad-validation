@@ -2,7 +2,6 @@
 
 namespace Iskandarali\MykadValidation;
 
-use Iskandarali\MykadValidation\Commands\MykadValidationCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
