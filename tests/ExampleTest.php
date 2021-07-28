@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace Iskandarali\MykadValidation\Tests;
 
 class ExampleTest extends TestCase
 {

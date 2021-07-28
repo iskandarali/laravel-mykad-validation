@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Iskandarali\MykadValidation\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class MykadValidationCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-mykad-validation';
 
     public $description = 'My command';
 

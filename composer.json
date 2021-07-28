@@ -1,17 +1,17 @@
 {
-    "name": "vendor_slug/package_slug",
-    "description": ":package_description",
+    "name": "iskandarali/laravel-mykad-validation",
+    "description": "Malaysia Mykad validation rules for laravel",
     "keywords": [
-        ":vendor_name",
+        "iskandarali",
         "laravel",
-        "package_slug"
+        "laravel-mykad-validation"
     ],
-    "homepage": "https://github.com/vendor_slug/package_slug",
+    "homepage": "https://github.com/iskandarali/laravel-mykad-validation",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Iskandar Ali",
+            "email": "3722339+iskandarali@users.noreply.github.com",
             "role": "Developer"
         }
     ],
@@ -30,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Iskandarali\\MykadValidation\\": "src",
+            "Iskandarali\\MykadValidation\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Iskandarali\\MykadValidation\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -50,10 +50,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Iskandarali\\MykadValidation\\MykadValidationServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
+                "MykadValidation": "Iskandarali\\MykadValidation\\MykadValidationFacade"
             }
         }
     },
