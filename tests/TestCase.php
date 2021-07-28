@@ -3,8 +3,8 @@
 namespace Iskandarali\MykadValidation\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use Iskandarali\MykadValidation\MykadValidationServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
