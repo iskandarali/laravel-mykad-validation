@@ -22,7 +22,6 @@ class Mykad implements Rule
         $year = substr($value, 0, 2);
         $month = substr($value, 2, 2);
         $date = substr($value, 4, 2);
-        $state = substr($value, 6, 2);
         $last = substr($value, 8, 4);
 
         if ($last > "4999") {
@@ -47,8 +46,6 @@ class Mykad implements Rule
 
     public function message(): string
     {
-        return __('mykadRules::messages.mykad', [
-            'attribute' => $this->attribute,
-        ]);
+        return __('mykadRules::messages.mykad');
     }
 }
