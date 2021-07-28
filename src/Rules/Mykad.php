@@ -44,8 +44,10 @@ class Mykad implements Rule
         return true;
     }
 
-    public function message()
+    public function message() : string
     {
-        return __('mykadRules::messages.mykad');
+        return __('mykadRules::messages.mykad', [
+            'attribute' => $this->attribute,
+        ]);
     }
 }
