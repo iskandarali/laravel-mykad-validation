@@ -44,7 +44,7 @@ class Mykad implements Rule
         return true;
     }
 
-    public function message(): string
+    public function message()
     {
         return __('mykadRules::messages.mykad');
     }
