@@ -16,10 +16,15 @@ class MykadValidationServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('laravel-mykad-validation')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-mykad-validation_table')
-            ->hasCommand(MykadValidationCommand::class);
+            ->name('laravel-mykad-validation');
+    }
+
+    public function boot()
+    {
+        $this->publishes([
+            __DIR__.'/../resources/lang' => resource_path('lang/vendor/mykadRules'),
+        ]);
+
+        $this->loadTranslationsFrom(__DIR__.'/../resources/lang/', 'mykadRules');
     }
 }
